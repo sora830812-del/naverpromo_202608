@@ -45,8 +45,6 @@ body { background: var(--bg); color: var(--text); font-family: 'Pretendard', san
 
 .card { background: var(--surface); border: 1.5px solid var(--border); border-radius: 10px; padding: 20px; box-shadow: var(--shadow); }
 .card-title { font-size: 12px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
-.card-value { font-size: 28px; font-weight: 800; letter-spacing: -1px;  }
-.card-sub { font-size: 11px; color: var(--text-muted); margin-top: 4px; }
 
 .kpi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
 .kpi-card { background: var(--surface); border: 1.5px solid var(--border); border-radius: 10px; padding: 18px 20px; box-shadow: var(--shadow); }
@@ -59,7 +57,6 @@ body { background: var(--bg); color: var(--text); font-family: 'Pretendard', san
 .progress-row { display: flex; justify-content: space-between; font-size: 10px; color: var(--text-muted); margin-top: 4px;  }
 
 .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-.three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
 
 .weekly-card { background: var(--surface); border: 1.5px solid var(--border); border-radius: 10px; padding: 18px 20px; }
 .weekly-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; }
@@ -82,13 +79,6 @@ body { background: var(--bg); color: var(--text); font-family: 'Pretendard', san
 .adv-bar-wrap { width: 80px; height: 5px; background: var(--surface2); border-radius: 3px; overflow: hidden; flex-shrink: 0; }
 .adv-bar { height: 100%; border-radius: 3px; }
 .adv-amount {  font-size: 11px; font-weight: 700; text-align: right; width: 70px; flex-shrink: 0; }
-
-.tier-table { width: 100%; border-collapse: collapse; }
-.tier-table th { background: var(--surface2); font-size: 11px; font-weight: 700; color: var(--text-muted); padding: 8px 12px; text-align: left; }
-.tier-table td { padding: 9px 12px; border-bottom: 1px solid var(--border); font-size: 12px; }
-.tier-table tr:last-child td { border-bottom: none; }
-.tier-table tr.active-tier td { background: #eff6ff; }
-.tier-tag { display: inline-block; font-size: 10px; font-weight: 700;  background: var(--text); color: #fff; padding: 1px 6px; border-radius: 3px; }
 
 .benefit-wrap { background: var(--surface); border: 2px solid var(--text); border-radius: 12px; overflow: hidden; }
 .benefit-top { padding: 20px 24px; border-bottom: 1.5px solid var(--border); }
@@ -120,7 +110,6 @@ body { background: var(--bg); color: var(--text); font-family: 'Pretendard', san
   width: 100%; border: none; outline: none;
   font-size: 12px; font-weight: 700; background: transparent; text-align: right; color: var(--accent-blue);
 }
-.mom-cell input::placeholder { color: var(--border); font-weight: 400; }
 .mom-cell.dept-label { font-size: 12px; font-weight: 700; color: var(--text); }
 .mom-delta {  font-size: 11px; font-weight: 700; }
 .mom-delta.pos { color: var(--accent-green); }
@@ -172,7 +161,6 @@ body { background: var(--bg); color: var(--text); font-family: 'Pretendard', san
 @media (max-width: 768px) {
   .kpi-grid { grid-template-columns: 1fr; }
   .two-col { grid-template-columns: 1fr; }
-  .three-col { grid-template-columns: 1fr; }
   .inputs-grid { grid-template-columns: 1fr 1fr; }
   .mom-grid { grid-template-columns: 1.2fr repeat(4, 1fr); font-size: 11px; }
 }
@@ -185,18 +173,18 @@ body { background: var(--bg); color: var(--text); font-family: 'Pretendard', san
   <div class="page-header">
     <h1>8월 네이버 프로모션 실적 현황</h1>
     <div class="header-meta">
-      <span class="badge">기준일 2026.08.13</span>
-      <span class="badge outline">경과 13일 / 잔여 18일</span>
-      <span class="badge success">SA 42.4%, 페이스 +0.4%p</span>
-      <span class="badge warn">GFA 38.1%, 페이스 -3.8%p</span>
-      <span class="badge outline">ADVoost 40.5%, 페이스 -1.4%p</span>
+      <span class="badge">기준일 2026.08.17</span>
+      <span class="badge outline">경과 17일 / 잔여 14일</span>
+      <span class="badge warn">SA 51.9%, 페이스 -2.9%p</span>
+      <span class="badge outline">GFA 53.6%, 페이스 -1.2%p</span>
+      <span class="badge success">ADVoost 58.8%, 페이스 +4.0%p</span>
     </div>
   </div>
 
   <!-- ── 01 달성률 KPI ── -->
   <div class="section-header">
     <span class="sec-num">01 — KPI</span>
-    <h2>목표 대비 달성률 현황 (2% 구간 목표 기준)</h2>
+    <h2>목표 대비 달성률 현황</h2>
   </div>
 
   <div class="kpi-grid">
@@ -207,15 +195,15 @@ body { background: var(--bg); color: var(--text); font-family: 'Pretendard', san
         SA · 파워링크+쇼핑검색
         <span class="tag tag-blue" style="margin-left:auto;">2% 구간</span>
       </div>
-      <div class="kpi-rate" style="color:#2563eb;">42.4%</div>
+      <div class="kpi-rate" style="color:#2563eb;">51.9%</div>
       <div class="kpi-bar-wrap" style="margin-top:12px;">
-        <div class="kpi-bar" style="width:42.4%; background:#2563eb;"></div>
+        <div class="kpi-bar" style="width:51.9%; background:#2563eb;"></div>
       </div>
       <div class="progress-row">
-        <span>5억 4,730만 / 12억 9,200만</span>
-        <span>잔여 7억 4,470만</span>
+        <span>6억 7,118만 / 12억 9,200만</span>
+        <span>잔여 6억 2,082만</span>
       </div>
-      <div class="kpi-detail" style="margin-top:8px;">일평균 소진 4,210만원/일, 현 속도 유지 시 월말 예상 101.0% (13억 509만)</div>
+      <div class="kpi-detail" style="margin-top:8px;">일평균 소진 3,948만원/일, 현 속도 유지 시 월말 예상 94.7% (12억 2,391만)</div>
     </div>
 
     <!-- GFA -->
@@ -225,15 +213,15 @@ body { background: var(--bg); color: var(--text); font-family: 'Pretendard', san
         GFA · 성과형 디스플레이
         <span class="tag tag-amber" style="margin-left:auto;">1% 구간 (하향)</span>
       </div>
-      <div class="kpi-rate" style="color:#7c3aed;">38.1%</div>
+      <div class="kpi-rate" style="color:#7c3aed;">53.6%</div>
       <div class="kpi-bar-wrap" style="margin-top:12px;">
-        <div class="kpi-bar" style="width:38.1%; background:#7c3aed;"></div>
+        <div class="kpi-bar" style="width:53.6%; background:#7c3aed;"></div>
       </div>
       <div class="progress-row">
-        <span>1억 4,752만 / 3억 8,700만</span>
-        <span>잔여 2억 3,948만</span>
+        <span>2억 753만 / 3억 8,700만</span>
+        <span>잔여 1억 7,947만</span>
       </div>
-      <div class="kpi-detail" style="margin-top:8px;">일평균 소진 1,135만원/일, 현 속도 유지 시 월말 예상 90.9% (3억 5,178만)</div>
+      <div class="kpi-detail" style="margin-top:8px;">일평균 소진 1,221만원/일, 현 속도 유지 시 월말 예상 97.8% (3억 7,844만)</div>
     </div>
 
     <!-- ADVoost -->
@@ -241,17 +229,17 @@ body { background: var(--bg); color: var(--text); font-family: 'Pretendard', san
       <div class="kpi-label">
         <span class="kpi-dot" style="background:#d97706;"></span>
         ADVoost · 쇼핑광고
-        <span class="tag tag-blue" style="margin-left:auto;">타겟 기준</span>
+        <span class="tag tag-green" style="margin-left:auto;">초과 예상</span>
       </div>
-      <div class="kpi-rate" style="color:#d97706;">40.5%</div>
+      <div class="kpi-rate" style="color:#d97706;">58.8%</div>
       <div class="kpi-bar-wrap" style="margin-top:12px;">
-        <div class="kpi-bar" style="width:40.5%; background:#d97706;"></div>
+        <div class="kpi-bar" style="width:58.8%; background:#d97706;"></div>
       </div>
       <div class="progress-row">
-        <span>1,702만 / 4,200만</span>
-        <span>잔여 2,498만</span>
+        <span>2,470만 / 4,200만</span>
+        <span>잔여 1,730만</span>
       </div>
-      <div class="kpi-detail" style="margin-top:8px;">일평균 소진 131만원/일, 현 속도 유지 시 월말 예상 96.6% (4,059만)</div>
+      <div class="kpi-detail" style="margin-top:8px;">일평균 소진 145만원/일, 현 속도 유지 시 월말 예상 107.2% (4,504만)</div>
     </div>
   </div>
 
@@ -267,26 +255,26 @@ body { background: var(--bg); color: var(--text); font-family: 'Pretendard', san
       <div class="weekly-header">
         <div>
           <div class="weekly-title">SA — 파워링크+쇼핑검색</div>
-          <div style="font-size:11px; color:var(--text-muted); margin-top:2px;">일평균 4,210만/일, 13일 경과</div>
+          <div style="font-size:11px; color:var(--text-muted); margin-top:2px;">일평균 3,948만/일, 17일 경과</div>
         </div>
-        <div class="weekly-rate ok">42.4%</div>
+        <div class="weekly-rate warn">51.9%</div>
       </div>
 
       <div style="margin-top:18px;">
         <div style="display:flex; justify-content:space-between; font-size:11px; font-weight:600; margin-bottom:5px;">
           <span style="color:var(--text-muted);">현재 달성</span>
-          <span style="color:#2563eb;">5억 4,730만 (42.4%)</span>
+          <span style="color:#2563eb;">6억 7,118만 (51.9%)</span>
         </div>
         <div style="position:relative; height:32px; border-radius:8px; overflow:hidden; background:var(--surface2);">
-          <div style="position:absolute; left:0; top:0; width:100%; height:100%; background:#bfdbfe; border-radius:8px;"></div>
-          <div style="position:absolute; left:0; top:0; width:42.4%; height:100%; background:#2563eb; border-radius:8px; display:flex; align-items:center; padding-left:10px; font-size:11px; color:#fff; font-weight:600; white-space:nowrap;">5.47억</div>
+          <div style="position:absolute; left:0; top:0; width:94.7%; height:100%; background:#bfdbfe; border-radius:8px;"></div>
+          <div style="position:absolute; left:0; top:0; width:51.9%; height:100%; background:#2563eb; border-radius:8px; display:flex; align-items:center; padding-left:10px; font-size:11px; color:#fff; font-weight:600; white-space:nowrap;">6.71억</div>
           <div style="position:absolute; right:0; top:0; width:2px; height:100%; background:#dc2626;"></div>
         </div>
         <div style="position:relative; height:18px;">
-          <div style="position:absolute; left:42.4%; top:2px; width:1px; height:8px; background:#2563eb;"></div>
-          <div style="position:absolute; left:42.4%; top:11px; font-size:9px; color:#2563eb; font-weight:600; transform:translateX(-50%);">현재◀</div>
-          <div style="position:absolute; left:100%; top:2px; width:1px; height:8px; background:#94a3b8; border-left:1px dashed #94a3b8;"></div>
-          <div style="position:absolute; left:100%; top:11px; font-size:9px; color:#94a3b8; transform:translateX(-50%);">예상</div>
+          <div style="position:absolute; left:51.9%; top:2px; width:1px; height:8px; background:#2563eb;"></div>
+          <div style="position:absolute; left:51.9%; top:11px; font-size:9px; color:#2563eb; font-weight:600; transform:translateX(-50%);">현재◀</div>
+          <div style="position:absolute; left:94.7%; top:2px; width:1px; height:8px; background:#94a3b8; border-left:1px dashed #94a3b8;"></div>
+          <div style="position:absolute; left:94.7%; top:11px; font-size:9px; color:#94a3b8; transform:translateX(-50%);">예상</div>
           <div style="position:absolute; right:0; top:2px; width:1px; height:8px; background:#dc2626;"></div>
           <div style="position:absolute; right:0; top:11px; font-size:9px; color:#dc2626; transform:translateX(-50%);">목표</div>
         </div>
@@ -301,15 +289,15 @@ body { background: var(--bg); color: var(--text); font-family: 'Pretendard', san
       <div class="weekly-stat-row" style="margin-top:14px;">
         <div class="weekly-stat">
           <div class="ws-label">일평균 소진</div>
-          <div class="ws-value">4,210만/일</div>
+          <div class="ws-value">3,948만/일</div>
         </div>
         <div class="weekly-stat">
           <div class="ws-label">월말 예상 달성</div>
-          <div class="ws-value pos">13.05억 (101.0%)</div>
+          <div class="ws-value neg">12.24억 (94.7%)</div>
         </div>
         <div class="weekly-stat">
           <div class="ws-label">목표 위해 필요</div>
-          <div class="ws-value">일평균 4,137만</div>
+          <div class="ws-value neg">일평균 4,434만</div>
         </div>
       </div>
     </div>
@@ -319,26 +307,26 @@ body { background: var(--bg); color: var(--text); font-family: 'Pretendard', san
       <div class="weekly-header">
         <div>
           <div class="weekly-title">GFA — 성과형 디스플레이</div>
-          <div style="font-size:11px; color:var(--text-muted); margin-top:2px;">일평균 1,135만/일, 13일 경과</div>
+          <div style="font-size:11px; color:var(--text-muted); margin-top:2px;">일평균 1,221만/일, 17일 경과</div>
         </div>
-        <div class="weekly-rate warn">38.1%</div>
+        <div class="weekly-rate warn">53.6%</div>
       </div>
 
       <div style="margin-top:18px;">
         <div style="display:flex; justify-content:space-between; font-size:11px; font-weight:600; margin-bottom:5px;">
           <span style="color:var(--text-muted);">현재 달성</span>
-          <span style="color:#d97706;">1억 4,752만 (38.1%)</span>
+          <span style="color:#d97706;">2억 753만 (53.6%)</span>
         </div>
         <div style="position:relative; height:32px; border-radius:8px; overflow:hidden; background:var(--surface2);">
-          <div style="position:absolute; left:0; top:0; width:90.9%; height:100%; background:#fde68a; border-radius:8px;"></div>
-          <div style="position:absolute; left:0; top:0; width:38.1%; height:100%; background:#d97706; border-radius:8px; display:flex; align-items:center; padding-left:10px; font-size:11px; color:#fff; font-weight:600; white-space:nowrap;">1.48억</div>
+          <div style="position:absolute; left:0; top:0; width:97.8%; height:100%; background:#fde68a; border-radius:8px;"></div>
+          <div style="position:absolute; left:0; top:0; width:53.6%; height:100%; background:#d97706; border-radius:8px; display:flex; align-items:center; padding-left:10px; font-size:11px; color:#fff; font-weight:600; white-space:nowrap;">2.08억</div>
           <div style="position:absolute; right:0; top:0; width:2px; height:100%; background:#059669;"></div>
         </div>
         <div style="position:relative; height:18px;">
-          <div style="position:absolute; left:38.1%; top:2px; width:1px; height:8px; background:#d97706;"></div>
-          <div style="position:absolute; left:38.1%; top:11px; font-size:9px; color:#d97706; font-weight:600; transform:translateX(-50%);">현재◀</div>
-          <div style="position:absolute; left:90.9%; top:2px; width:1px; height:8px; background:#94a3b8; border-left:1px dashed #94a3b8;"></div>
-          <div style="position:absolute; left:90.9%; top:11px; font-size:9px; color:#94a3b8; transform:translateX(-50%);">예상</div>
+          <div style="position:absolute; left:53.6%; top:2px; width:1px; height:8px; background:#d97706;"></div>
+          <div style="position:absolute; left:53.6%; top:11px; font-size:9px; color:#d97706; font-weight:600; transform:translateX(-50%);">현재◀</div>
+          <div style="position:absolute; left:97.8%; top:2px; width:1px; height:8px; background:#94a3b8; border-left:1px dashed #94a3b8;"></div>
+          <div style="position:absolute; left:97.8%; top:11px; font-size:9px; color:#94a3b8; transform:translateX(-50%);">예상</div>
           <div style="position:absolute; right:0; top:2px; width:1px; height:8px; background:#059669;"></div>
           <div style="position:absolute; right:0; top:11px; font-size:9px; color:#059669; transform:translateX(-50%);">목표</div>
         </div>
@@ -353,15 +341,15 @@ body { background: var(--bg); color: var(--text); font-family: 'Pretendard', san
       <div class="weekly-stat-row" style="margin-top:14px;">
         <div class="weekly-stat">
           <div class="ws-label">일평균 소진</div>
-          <div class="ws-value">1,135만/일</div>
+          <div class="ws-value">1,221만/일</div>
         </div>
         <div class="weekly-stat">
           <div class="ws-label">월말 예상 달성</div>
-          <div class="ws-value" style="color:var(--accent-amber);">3.52억 (90.9%)</div>
+          <div class="ws-value" style="color:var(--accent-amber);">3.78억 (97.8%)</div>
         </div>
         <div class="weekly-stat">
           <div class="ws-label">목표 위해 필요</div>
-          <div class="ws-value neg">일평균 1,330만</div>
+          <div class="ws-value" style="color:var(--accent-amber);">일평균 1,282만</div>
         </div>
       </div>
     </div>
@@ -369,7 +357,7 @@ body { background: var(--bg); color: var(--text); font-family: 'Pretendard', san
 
   <div class="section-header">
     <span class="sec-num">03 — TOP 10</span>
-    <h2>주요 광고주 SA 소진 순위 (8/1~8/13 누적)</h2>
+    <h2>주요 광고주 SA 소진 순위 (8/1~8/17 누적)</h2>
   </div>
 
   <div class="two-col">
@@ -400,7 +388,7 @@ body { background: var(--bg); color: var(--text); font-family: 'Pretendard', san
   </div>
 
   <div class="card">
-    <div class="card-title">GFA — 계정별 목표(2% 구간) 대비 페이스</div>
+    <div class="card-title">GFA — 계정별 목표 대비 페이스</div>
     <div style="display:flex; gap:14px; margin-bottom:10px; font-size:10px; color:var(--text-muted);">
       <span style="display:flex; align-items:center; gap:4px;"><span style="display:inline-block; width:10px; height:8px; background:#7c3aed; border-radius:2px;"></span>현재 달성</span>
       <span style="display:flex; align-items:center; gap:4px;"><span style="display:inline-block; width:10px; height:8px; background:#7c3aed; opacity:0.35; border-radius:2px;"></span>월말 예상</span>
@@ -409,7 +397,7 @@ body { background: var(--bg); color: var(--text); font-family: 'Pretendard', san
     <div id="gfa-target-body"></div>
   </div>
   <div style="font-size:10px; color:var(--text-muted); margin-top:8px;">
-    ※ 목표 구간은 전 계정 2% 구간 기준입니다. 지난달까지 전체 합산 목표만 보다가 목표 직전에서 계속 미끄러진 문제 때문에, 8월부터 상위 광고주는 계정별로 목표를 직접 부여하고 경과일 대비 페이스를 별도 추적합니다. 월말 예상 = 현재 소진액 ÷ 경과일수(13일) × 전체일수(31일). 막대는 목표액(100%) 기준으로 정규화했습니다.
+    ※ 계정별 목표액은 원본 파일에 설정된 값을 그대로 사용했습니다. 전체 GFA 목표는 3.87억(1% 구간)으로 하향됐으나 계정별 목표는 아직 갱신 전입니다. 월말 예상 = 현재 소진액 ÷ 경과일수(17일) × 전체일수(31일). 막대는 목표액(100%) 기준으로 정규화했습니다.
   </div>
 
   <!-- ── 05 베네핏 계산기 ── -->
@@ -420,7 +408,7 @@ body { background: var(--bg); color: var(--text); font-family: 'Pretendard', san
 
   <div class="benefit-wrap">
     <div class="benefit-top">
-      <h3>베네핏 배분 계산기 <span class="needs-data">⚠ 8월 13일치 일할환산(잠정)</span></h3>
+      <h3>베네핏 배분 계산기 <span class="needs-data">⚠ 8월 17일치 일할환산(잠정)</span></h3>
       <div class="benefit-note" style="margin-top:6px;">
         보상액의 20% → 재원 | 제휴실 정액 10% | 잔여 90% → 부서별 MoM 배분 (증감률 50% + 증감금액 50%)
       </div>
@@ -453,10 +441,10 @@ body { background: var(--bg); color: var(--text); font-family: 'Pretendard', san
 
     <div class="mom-section">
       <div class="mom-section-title">
-        📊 동일 기간 비교 — 7월 전체 vs 8/1~8/13 일할환산
+        📊 동일 기간 비교 — 7월 전체 vs 8/1~8/17 일할환산
         <span class="tag tag-amber">MoM 배분 근거</span>
       </div>
-      <div class="mom-section-sub">8월 13일치 실적을 ÷13×31로 일할환산해 7월 전체(31일)와 동일 기간 기준으로 비교. 수치 수정 가능합니다.</div>
+      <div class="mom-section-sub">8월 17일치 실적을 ÷17×31로 일할환산해 7월 전체(31일)와 동일 기간 기준으로 비교. 수치 수정 가능합니다.</div>
 
       <div class="mom-grid">
         <div class="mom-col-header">부서</div>
@@ -468,35 +456,35 @@ body { background: var(--bg); color: var(--text); font-family: 'Pretendard', san
         <div class="mom-row" id="mom-row-1">
           <div class="mom-cell dept-label">마케팅본부</div>
           <div class="mom-cell"><input type="number" id="apr-1" value="95336" oninput="calcBenefit()"></div>
-          <div class="mom-cell"><input type="number" id="may-1" value="98949" oninput="calcBenefit()"></div>
+          <div class="mom-cell"><input type="number" id="may-1" value="93919" oninput="calcBenefit()"></div>
           <div class="mom-cell"><span class="mom-delta" id="delta-1">—</span></div>
           <div class="mom-cell"><span class="mom-delta" id="rate-1">—</span></div>
         </div>
         <div class="mom-row" id="mom-row-2">
           <div class="mom-cell dept-label">IMC본부</div>
           <div class="mom-cell"><input type="number" id="apr-2" value="68702" oninput="calcBenefit()"></div>
-          <div class="mom-cell"><input type="number" id="may-2" value="58014" oninput="calcBenefit()"></div>
+          <div class="mom-cell"><input type="number" id="may-2" value="57542" oninput="calcBenefit()"></div>
           <div class="mom-cell"><span class="mom-delta" id="delta-2">—</span></div>
           <div class="mom-cell"><span class="mom-delta" id="rate-2">—</span></div>
         </div>
         <div class="mom-row" id="mom-row-3">
           <div class="mom-cell dept-label">SMB팀</div>
           <div class="mom-cell"><input type="number" id="apr-3" value="2902" oninput="calcBenefit()"></div>
-          <div class="mom-cell"><input type="number" id="may-3" value="2588" oninput="calcBenefit()"></div>
+          <div class="mom-cell"><input type="number" id="may-3" value="2413" oninput="calcBenefit()"></div>
           <div class="mom-cell"><span class="mom-delta" id="delta-3">—</span></div>
           <div class="mom-cell"><span class="mom-delta" id="rate-3">—</span></div>
         </div>
         <div class="mom-row" id="mom-row-4">
           <div class="mom-cell dept-label">미디어제휴실</div>
           <div class="mom-cell"><input type="number" id="apr-4" value="2083" oninput="calcBenefit()"></div>
-          <div class="mom-cell"><input type="number" id="may-4" value="2034" oninput="calcBenefit()"></div>
+          <div class="mom-cell"><input type="number" id="may-4" value="1944" oninput="calcBenefit()"></div>
           <div class="mom-cell"><span class="mom-delta" id="delta-4">—</span></div>
           <div class="mom-cell"><span class="mom-delta" id="rate-4">—</span></div>
         </div>
       </div>
 
       <div style="font-size:10px; color:var(--text-muted); margin-top:8px;">
-        ※ 부서 매출은 프로모션 지급(안)_2608.xlsx '광고주정리' 시트의 계정별 부서 매핑을 최신 raw 데이터에 적용해 재계산 (SA+GFA 합산). 8월 = 13일치 ÷13×31 일할환산. 예상 보상액 = SA 목표(2%구간 12.92억)×2% + GFA 목표(1%구간 3.87억)×1%
+        ※ 부서 매출은 프로모션 지급(안)_2608.xlsx '광고주정리' 시트의 계정별 부서 매핑을 최신 raw 데이터에 적용해 재계산 (SA+GFA 합산). 8월 = 17일치 ÷17×31 일할환산. 예상 보상액 = SA 목표(2%구간 12.92억)×2% + GFA 목표(1%구간 3.87억)×1%
       </div>
     </div>
 
@@ -542,34 +530,33 @@ body { background: var(--bg); color: var(--text); font-family: 'Pretendard', san
       <li><span class="notice-num">02</span>GFA 프로모션 — 당월 유상매출이 전월 대비 감소 시 미달성으로 간주</li>
       <li><span class="notice-num">03</span>공통 — 프로모션 기간 중 이관받은 계정은 집계에서 제외</li>
       <li><span class="notice-num">04</span>ADVoost — 해당 기간 유상 광고비 5만원 초과 소진 시 계정 수에 포함</li>
-      <li><span class="notice-num">05</span>8월부터 상위 광고주는 04번 섹션처럼 계정별 목표와 페이스를 별도 추적합니다</li>
+      <li><span class="notice-num">05</span>GFA 목표는 네이버 조정으로 4.10억에서 3.87억으로 하향됐고, 보상 요율도 2%에서 1%로 함께 조정됐습니다</li>
     </ul>
   </div>
 
   <!-- 푸터 -->
   <div class="page-footer">
-    <span>기준일 2026.08.13, 데이터: 네이버 성과형광고 로우데이터 (8/13 누적, 진행중)</span>
+    <span>기준일 2026.08.17, 데이터: 네이버 성과형광고 로우데이터 (8/17 누적, 진행중)</span>
     <span>미디어제휴실 · 담당: 깨발</span>
   </div>
 
 </div><!-- /wrapper -->
 
 <script>
-/* ── TOP10 데이터 (raw, 8/1~8/12 누적) ── */
 const top10 = [
-  { name: '에이아이에이생명보험 주식회사', amount: 16947 },
-  { name: '쿠쿠홈시스 주식회사', amount: 15199 },
-  { name: '흥국화재해상보험', amount: 5228 },
-  { name: 'SBI저축은행', amount: 2726 },
-  { name: '주식회사 윈썸컨설팅', amount: 2608 },
-  { name: '쿠쿠 정수기 렌탈', amount: 2118 },
-  { name: '베리트(주)', amount: 1423 },
-  { name: '(주)모두투어네트워크', amount: 1161 },
-  { name: '신한이지손해보험 주식회사', amount: 1147 },
-  { name: '(주)티알엔', amount: 881 },
+  { name: '에이아이에이생명보험 주식회사', amount: 20105 },
+  { name: '쿠쿠홈시스 주식회사', amount: 19861 },
+  { name: '흥국화재해상보험', amount: 5827 },
+  { name: 'SBI저축은행', amount: 3301 },
+  { name: '주식회사 윈썸컨설팅', amount: 2888 },
+  { name: '쿠쿠 정수기 렌탈', amount: 2408 },
+  { name: '베리트(주)', amount: 1906 },
+  { name: '(주)모두투어네트워크', amount: 1505 },
+  { name: '신한이지손해보험 주식회사', amount: 1498 },
+  { name: '(주)티알엔', amount: 1105 },
 ];
 
-const SA_TOTAL = 54730;
+const SA_TOTAL = 67118;
 const SA_TARGET = 129200;
 const SA_REMAIN = SA_TARGET - SA_TOTAL;
 
@@ -608,7 +595,6 @@ function renderTop10() {
   });
 }
 
-/* ── 04 계정별 목표달성현황 ── */
 function tagFor(pct) {
   if (pct >= 100) return { cls: 'tag-green', label: '초과 예상' };
   if (pct >= 90) return { cls: 'tag-amber', label: '근접' };
@@ -622,23 +608,23 @@ function paceColor(pct) {
 }
 
 const saTargets = [
-  { name: 'AIA생명', spent: 169416189, goal: 321000000 },
-  { name: '쿠쿠(일시불)', spent: 86393674, goal: 250000000 },
-  { name: '쿠쿠(렌탈)', spent: 65594793, goal: 150000000 },
-  { name: '흥국화재TM', spent: 52283920, goal: 130000000 },
-  { name: 'SBI저축은행', spent: 27255333, goal: 70000000 },
-  { name: '신한EZ손해보험', spent: 11471023, goal: 29000000 },
-  { name: '모두투어', spent: 11614414, goal: 29000000 },
-  { name: '쇼핑엔티', spent: 8808258, goal: 19000000 },
+  { name: 'AIA생명', spent: 200949908, goal: 321000000 },
+  { name: '쿠쿠(일시불)', spent: 115871380, goal: 250000000 },
+  { name: '쿠쿠(렌탈)', spent: 82742514, goal: 150000000 },
+  { name: '흥국화재TM', spent: 58272041, goal: 130000000 },
+  { name: 'SBI저축은행', spent: 33008223, goal: 70000000 },
+  { name: '신한EZ손해보험', spent: 14975865, goal: 29000000 },
+  { name: '모두투어', spent: 15052207, goal: 29000000 },
+  { name: '쇼핑엔티', spent: 11047888, goal: 19000000 },
 ];
 const gfaTargets = [
-  { name: 'AIA생명', spent: 61253683, goal: 144000000 },
-  { name: '쿠쿠(일시불+렌탈)', spent: 31925065, goal: 90000000 },
-  { name: '쿠쿠(렌탈)', spent: 20425886, goal: 30000000 },
-  { name: '흥국화재TM', spent: 7152805, goal: 25000000 },
-  { name: '키움에셋플래너', spent: 20146125, goal: 51000000 },
+  { name: 'AIA생명', spent: 84061553, goal: 144000000 },
+  { name: '쿠쿠(일시불+렌탈)', spent: 46512632, goal: 90000000 },
+  { name: '쿠쿠(렌탈)', spent: 33462866, goal: 30000000 },
+  { name: '흥국화재TM', spent: 8217988, goal: 25000000 },
+  { name: '키움에셋플래너', spent: 26526981, goal: 51000000 },
 ];
-const T_ELAPSED = 13, T_TOTAL_DAYS = 31;
+const T_ELAPSED = 17, T_TOTAL_DAYS = 31;
 
 function renderTargetTable(bodyId, rows, baseColor) {
   const wrap = document.getElementById(bodyId);
@@ -668,7 +654,6 @@ function renderTargetTable(bodyId, rows, baseColor) {
   wrap.innerHTML = html;
 }
 
-/* ── 구간 선택 ── */
 document.getElementById('tier-select').addEventListener('change', function() {
   const v = this.value;
   if (v !== 'custom') {
@@ -677,7 +662,6 @@ document.getElementById('tier-select').addEventListener('change', function() {
   calcBenefit();
 });
 
-/* ── 베네핏 계산 ── */
 function calcBenefit() {
   const saReward = parseFloat(document.getElementById('sa-reward').value) || 0;
   const gfaReward = parseFloat(document.getElementById('gfa-reward').value) || 0;
@@ -720,13 +704,13 @@ function calcBenefit() {
   const positives = momData.filter(d => d.delta > 0);
   if (positives.length === 0 || totalReward === 0) {
     statusEl.textContent = totalReward === 0
-      ? '⚠ 보상액 미입력 — 구간 확정 후 SA/GFA 예상 보상액을 입력하세요'
-      : '⚠ 동일기간 비교 시 전 부서 마이너스 — 배분 보류';
+      ? '보상액 미입력. 구간 확정 후 SA/GFA 예상 보상액을 입력하세요'
+      : '⚠ 동일기간 비교 시 전 부서 마이너스. 현 시점 기준 배분 대상 부서가 없습니다';
     tbody.innerHTML = `<tr><td colspan="5" style="text-align:center; color:var(--text-muted); padding:20px;">${statusEl.textContent}</td></tr>`;
     return;
   }
 
-  statusEl.textContent = `✓ 8월 일할환산 vs 7월 전체 MoM · 증가 부서 ${positives.length}개 기준 배분`;
+  statusEl.textContent = `✓ 8월 일할환산 vs 7월 전체 MoM, 증가 부서 ${positives.length}개 기준 배분`;
 
   const totalDeltaAmt = positives.reduce((s, d) => s + d.delta, 0);
   const totalDeltaRate = positives.reduce((s, d) => s + Math.max(d.rate, 0), 0);
@@ -767,7 +751,6 @@ function calcBenefit() {
   tbody.innerHTML = rows;
 }
 
-/* ── 초기화 ── */
 renderTop10();
 renderTargetTable('sa-target-body', saTargets, '#2563eb');
 renderTargetTable('gfa-target-body', gfaTargets, '#7c3aed');
